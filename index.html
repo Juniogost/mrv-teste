@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartamentos MRV na planta - Goiânia, Aparecida e Anápolis | Investe Canedo</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family: -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
+  body { background:#f0f3f7; color:#2b2b2b; }
+  .teste { background:#b7791f; color:#fff; text-align:center; font-size:12px; font-weight:700; letter-spacing:1px; padding:6px 10px; }
+  header { background:#0d2c54; color:#fff; padding:28px 18px 24px; text-align:center; }
+  header .tag { display:inline-block; background:#f5b721; color:#0d2c54; font-weight:700; font-size:12px; padding:4px 12px; border-radius:20px; margin-bottom:10px; }
+  header h1 { font-size:24px; line-height:1.25; margin-bottom:8px; }
+  header p { font-size:14px; color:#cfdcea; }
+  .construtora { font-size:12px; color:#9db4cc; margin-top:10px; }
+  section { max-width:520px; margin:0 auto; padding:22px 14px; }
+  h2 { font-size:18px; color:#0d2c54; margin-bottom:14px; }
+  h3.cidade { font-size:15px; color:#0d2c54; letter-spacing:1px; margin:18px 0 12px; border-bottom:2px solid #f5b721; padding-bottom:6px; }
+  .card { background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:18px; }
+  .card-body { padding:16px; }
+  .card-body h3 { font-size:19px; color:#0d2c54; }
+  .card-body .tipo { font-size:13px; color:#666; margin:2px 0 10px; }
+  .valor { font-size:19px; font-weight:800; color:#0d2c54; margin-bottom:12px; line-height:1.3; }
+  .valor .ate { font-weight:400; font-size:13px; color:#666; }
+  .fluxo { background:#f0f3f7; border-radius:10px; padding:12px; font-size:13px; line-height:1.7; margin-bottom:10px; }
+  .fluxo b { color:#0d2c54; }
+  .cta { display:block; background:#25D366; color:#fff; text-align:center; font-weight:700; font-size:15px; padding:14px; border-radius:10px; text-decoration:none; }
+  .cta small { display:block; font-weight:400; font-size:12px; opacity:.9; }
+  .sim { background:#fff; border-radius:14px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  .sim label { font-size:13px; color:#444; display:block; margin-bottom:6px; }
+  .sim input { width:100%; padding:12px; font-size:16px; border:1px solid #c4d0dd; border-radius:10px; margin-bottom:10px; }
+  .sim button { width:100%; background:#0d2c54; color:#fff; border:0; font-size:15px; font-weight:700; padding:13px; border-radius:10px; cursor:pointer; }
+  .resultado { margin-top:14px; background:#eef6ee; border:1px solid #bcd8bc; border-radius:10px; padding:14px; font-size:13px; line-height:1.8; display:none; }
+  .resultado b { color:#0d2c54; }
+  .aviso-renda { margin-top:14px; background:#fff8e6; border:1px solid #e8d9a8; border-radius:10px; padding:12px; font-size:13px; color:#5c4d1e; display:none; }
+  table.faixas { width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.08); font-size:12.5px; }
+  table.faixas th { background:#0d2c54; color:#fff; padding:9px 8px; text-align:left; font-size:12px; }
+  table.faixas td { padding:8px; border-bottom:1px solid #e5ebf2; line-height:1.5; }
+  table.faixas tr:last-child td { border-bottom:0; }
+  .trilha { background:#fff; border-radius:14px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  .passo { display:flex; gap:12px; margin-bottom:14px; align-items:flex-start; }
+  .passo:last-child { margin-bottom:0; }
+  .num { min-width:28px; height:28px; border-radius:50%; background:#0d2c54; color:#fff; font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .passo p { font-size:14px; padding-top:5px; }
+  .docs { background:#fff; border-radius:14px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,.08); font-size:13.5px; line-height:1.9; }
+  .docs b { color:#0d2c54; }
+  .nota { background:#fff8e6; border:1px solid #e8d9a8; border-radius:10px; padding:14px; font-size:12px; line-height:1.7; color:#5c4d1e; }
+  .nota b { color:#3f3512; }
+  footer { background:#0d2c54; color:#b9cadd; text-align:center; font-size:12px; padding:20px 14px 30px; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="teste">PÁGINA DE TESTE (PRÉVIA) — NÃO PUBLICADA</div>
+<header>
+  <span class="tag">11 EMPREENDIMENTOS NA PLANTA</span>
+  <h1>Apartamentos MRV em Goiânia, Aparecida de Goiânia e Anápolis</h1>
+  <p>Use o Minha Casa Minha Vida, simule pela sua renda e fale direto com a gente.</p>
+  <div class="construtora">Construção: MRV · Atendimento: Investe Canedo</div>
+</header>
+
+<section>
+  <h2>Simule pela sua renda</h2>
+  <div class="sim">
+    <label for="renda">Renda familiar mensal (R$)</label>
+    <input id="renda" type="number" inputmode="numeric" min="0" placeholder="Ex.: 3200">
+    <button onclick="simular()">Ver o que cabe no meu bolso</button>
+    <div class="resultado" id="resultado"></div>
+    <div class="aviso-renda" id="aviso"></div>
+    <p style="font-size:11px;color:#888;margin-top:10px;">Valores de referência da tabela oficial MRV de 26/10/2026 (Minha Casa Minha Vida, prazo de 420 meses). A simulação final é feita no sistema da MRV/Caixa.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Empreendimentos (tabela oficial 26/10/2026)</h2>
+<h3 class="cidade">GOIÂNIA</h3>
+  <div class="card">
+    <div class="card-body">
+      <h3>GRAN TERRAZZO</h3>
+      <div class="tipo">Nova Esperança · Goiânia</div>
+      <div class="valor">R$ 229.938,00 <span class="ate">a</span> R$ 277.556,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 1 e 2 quartos · 39,30 m²<br>
+        <b>Lançamento:</b> set/2026<br><b>Previsão de entrega:</b> 2º semestre de 2029<br>
+        <b>Unidades na tabela:</b> 157
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20GRAN%20TERRAZZO%20%28Goiânia%29%20da%20MRV.">Quero as condições do GRAN TERRAZZO<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3>GOLDEN VILLE</h3>
+      <div class="tipo">Faculdade Alfa · Goiânia</div>
+      <div class="valor">R$ 269.912,00 <span class="ate">a</span> R$ 387.159,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 1 e 2 quartos (com opção de suíte) · 37,28 a 49,35 m²<br>
+        <b>Lançamento:</b> mar/2025<br><b>Previsão de entrega:</b> 2º semestre de 2027<br>
+        <b>Unidades na tabela:</b> 132
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20GOLDEN%20VILLE%20%28Goiânia%29%20da%20MRV.">Quero as condições do GOLDEN VILLE<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3>GRAN PORTO</h3>
+      <div class="tipo">Setor Novo Mundo · Goiânia</div>
+      <div class="valor">R$ 252.990,00 <span class="ate">a</span> R$ 373.990,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 1 e 2 quartos (com opção de suíte) · 37,28 a 49,35 m²<br>
+        <b>Lançamento:</b> set/2024<br><b>Previsão de entrega:</b> 2º semestre de 2027<br>
+        <b>Unidades na tabela:</b> 86
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20GRAN%20PORTO%20%28Goiânia%29%20da%20MRV.">Quero as condições do GRAN PORTO<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3>GRAN AURORA</h3>
+      <div class="tipo">Jardim Gardênia · Goiânia</div>
+      <div class="valor">R$ 233.771,00 <span class="ate">a</span> R$ 269.961,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 2 quartos · 39,30 a 42,02 m²<br>
+        <b>Lançamento:</b> jan/2026<br><b>Previsão de entrega:</b> 1º semestre de 2029<br>
+        <b>Unidades na tabela:</b> 86
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20GRAN%20AURORA%20%28Goiânia%29%20da%20MRV.">Quero as condições do GRAN AURORA<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3>PRIVILEGE</h3>
+      <div class="tipo">Carolina Parque · Goiânia</div>
+      <div class="valor">R$ 249.614,00 <span class="ate">a</span> R$ 301.898,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 1 e 2 quartos · 39,30 m²<br>
+        <b>Lançamento:</b> mar/2026<br><b>Previsão de entrega:</b> 1º semestre de 2028<br>
+        <b>Unidades na tabela:</b> 111
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20PRIVILEGE%20%28Goiânia%29%20da%20MRV.">Quero as condições do PRIVILEGE<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3>VERT</h3>
+      <div class="tipo">Parque Amazônia · Goiânia</div>
+      <div class="valor">R$ 369.110,00 <span class="ate">a</span> R$ 459.200,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 1 e 2 quartos (com opção de suíte) · 38,38 a 50,41 m²<br>
+        <b>Lançamento:</b> out/2025<br><b>Previsão de entrega:</b> 2º semestre de 2028<br>
+        <b>Unidades na tabela:</b> 158
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20VERT%20%28Goiânia%29%20da%20MRV.">Quero as condições do VERT<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+<h3 class="cidade">APARECIDA DE GOIÂNIA</h3>
+  <div class="card">
+    <div class="card-body">
+      <h3>GRAN PARMA</h3>
+      <div class="tipo">Papilon Park · Aparecida de Goiânia</div>
+      <div class="valor">R$ 248.228,00 <span class="ate">a</span> R$ 316.776,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 2 quartos · 41,35 m²<br>
+        <b>Lançamento:</b> jun/2026<br><b>Previsão de entrega:</b> final de 2028<br>
+        <b>Unidades na tabela:</b> 90
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20GRAN%20PARMA%20%28Aparecida%20de%20Goiânia%29%20da%20MRV.">Quero as condições do GRAN PARMA<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3>GRAN ESSENCE</h3>
+      <div class="tipo">Jardim Tiradentes · Aparecida de Goiânia</div>
+      <div class="valor">R$ 254.990,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 2 quartos · 41,35 m²<br>
+        <b>Lançamento:</b> abr/2026<br><b>Previsão de entrega:</b> 1º semestre de 2027<br>
+        <b>Unidades na tabela:</b> 18
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20GRAN%20ESSENCE%20%28Aparecida%20de%20Goiânia%29%20da%20MRV.">Quero as condições do GRAN ESSENCE<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3>GRAN SAFIRA</h3>
+      <div class="tipo">Região do Parque Atheneu · Aparecida de Goiânia</div>
+      <div class="valor">R$ 254.952,00 <span class="ate">a</span> R$ 300.047,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 1 e 2 quartos · 41,25 a 44,50 m²<br>
+        <b>Lançamento:</b> jul/2026<br><b>Previsão de entrega:</b> 1º semestre de 2029<br>
+        <b>Unidades na tabela:</b> 100
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20GRAN%20SAFIRA%20%28Aparecida%20de%20Goiânia%29%20da%20MRV.">Quero as condições do GRAN SAFIRA<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+<h3 class="cidade">ANÁPOLIS</h3>
+  <div class="card">
+    <div class="card-body">
+      <h3>ARCOS DO PLANALTO</h3>
+      <div class="tipo">Anápolis · Anápolis</div>
+      <div class="valor">R$ 254.521,00 <span class="ate">a</span> R$ 335.910,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 2 quartos · 39,85 a 43,81 m²<br>
+        <b>Lançamento:</b> a confirmar<br><b>Previsão de entrega:</b> a confirmar<br>
+        <b>Unidades na tabela:</b> 253
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20ARCOS%20DO%20PLANALTO%20%28Anápolis%29%20da%20MRV.">Quero as condições do ARCOS DO PLANALTO<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3>EPIC</h3>
+      <div class="tipo">Jardim Europa · Anápolis</div>
+      <div class="valor">R$ 254.990,00 <span class="ate">a</span> R$ 358.990,00</div>
+      <div class="fluxo">
+        <b>Tipologia:</b> 2 quartos (com opção de suíte) · 40,36 a 46,86 m²<br>
+        <b>Lançamento:</b> a confirmar<br><b>Previsão de entrega:</b> a confirmar<br>
+        <b>Unidades na tabela:</b> 130
+      </div>
+      <a class="cta" href="https://wa.me/5562981428585?text=Oi!%20Quero%20saber%20as%20condições%20do%20EPIC%20%28Anápolis%29%20da%20MRV.">Quero as condições do EPIC<small>WhatsApp (62) 98142-8585</small></a>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h2>Como funciona o pagamento</h2>
+  <div class="trilha">
+    <div class="passo"><div class="num">1</div><p><b>Financiamento Caixa</b> — em geral cerca de 80% do valor, em até 420x, com juros do Minha Casa Minha Vida. A parcela fica em torno de 30% da sua renda.</p></div>
+    <div class="passo"><div class="num">2</div><p><b>Entrada com a MRV</b> — o restante (cerca de 20%) você paga direto à MRV: sinal mínimo de 1,20% + 0,40% no ato, e o restante em mensais durante a obra (em até 60x), com correção pelo INCC.</p></div>
+    <div class="passo"><div class="num">3</div><p><b>Descontos</b> — algumas unidades têm desconto "Bom Pagador" e campanhas. Confirmamos a unidade exata no atendimento.</p></div>
+    <div class="passo"><div class="num">4</div><p><b>Proposta</b> — a proposta final é montada no sistema oficial da MRV, com a documentação aprovada pela Caixa.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Faixas do Minha Casa Minha Vida (juros nominais ao ano)</h2>
+  <table class="faixas">
+    <tr><th>Faixa</th><th>Renda familiar</th><th>Cotista FGTS</th><th>Não cotista</th></tr>
+    <tr><td>1 (PCVA)</td><td>até R$ 2.160</td><td>4,25%</td><td>4,75%</td></tr>
+    <tr><td>1 (PCVA)</td><td>R$ 2.160,01 a 2.850</td><td>4,50%</td><td>5,00%</td></tr>
+    <tr><td>2</td><td>R$ 2.850,01 a 3.200</td><td>4,75%</td><td>5,25%</td></tr>
+    <tr><td>2</td><td>R$ 3.200,01 a 3.500</td><td>5,00%</td><td>5,50%</td></tr>
+    <tr><td>2</td><td>R$ 3.500,01 a 4.000</td><td>5,50%</td><td>6,00%</td></tr>
+    <tr><td>2</td><td>R$ 4.000,01 a 5.000</td><td>6,50%</td><td>7,00%</td></tr>
+    <tr><td>3</td><td>R$ 5.000,01 a 9.600</td><td>7,66%</td><td>8,16%</td></tr>
+    <tr><td>4</td><td>R$ 9.600,01 a 13.000</td><td>10,00%</td><td>10,00%</td></tr>
+  </table>
+  <p style="font-size:11.5px;color:#666;margin-top:10px;line-height:1.6;">PCVA (Faixa 1): imóvel de até R$ 270 mil em Goiânia e R$ 255 mil em Aparecida de Goiânia, renda até R$ 3.200. Na Faixa 3, imóvel de até cerca de R$ 370-400 mil. Fonte: material oficial MRV (tabela e faixas vigentes de 26/10/2026).</p>
+</section>
+
+<section>
+  <h2>Documentos para a proposta</h2>
+  <div class="docs">
+    <b>Identificação:</b> RG e CPF<br>
+    <b>Estado civil:</b> certidão (nascimento, casamento ou divórcio)<br>
+    <b>Endereço:</b> comprovante recente<br>
+    <b>Renda:</b> 2 últimos holerites + 120 dias de registro em CTPS (autônomos: 6 meses de extratos + 6 faturas)<br>
+    <b>CTPS:</b> carteira de trabalho completa<br>
+    <b>IR:</b> declaração, se você declara<br>
+    <b>FGTS:</b> mínimo de 3 anos para usar como cotista<br>
+    <b>Restrições:</b> sem apontamentos (Serasa/SPC/Receita/protesto)
+  </div>
+</section>
+
+<section>
+  <div class="nota">
+    <b>Importante:</b> valores, unidades e condições desta página vêm da tabela oficial MRV de 26/10/2026 e podem mudar sem aviso. A disponibilidade da unidade e a proposta final são sempre confirmadas no sistema da MRV/Caixa durante o atendimento.
+  </div>
+</section>
+
+<footer>
+  Atendimento: Investe Canedo · WhatsApp (62) 98142-8585<br>
+  Construção: MRV Engenharia · Condições Minha Casa Minha Vida / Caixa<br>
+  Página de teste para validação interna.
+</footer>
+
+<script>
+var TABELA = [{"r": 2160, "ts": 0.0475, "tc": 0.0425, "fs": 126434.48, "fc": 134828.2, "ss": 13215, "sc": 43423}, {"r": 2160.01, "ts": 0.05, "tc": 0.045, "fs": 122534.84, "fc": 130529.16, "ss": 13302, "sc": 43744}, {"r": 2200, "ts": 0.05, "tc": 0.045, "fs": 122534.84, "fc": 130529.16, "ss": 13302, "sc": 43744}, {"r": 2400, "ts": 0.05, "tc": 0.045, "fs": 136564.22, "fc": 145473.84, "ss": 9488, "sc": 31143}, {"r": 2500, "ts": 0.05, "tc": 0.045, "fs": 159947.51, "fc": 170382.68, "ss": 4760, "sc": 15574}, {"r": 2600, "ts": 0.05, "tc": 0.045, "fs": 148255.87, "fc": 157928.26, "ss": 6878, "sc": 22541}, {"r": 2850, "ts": 0.05, "tc": 0.045, "fs": 162870.42, "fc": 173496.28, "ss": 4305, "sc": 14078}, {"r": 2850.01, "ts": 0.0525, "tc": 0.0475, "fs": 153206.18, "fc": 163028.56, "ss": 4343, "sc": 14217}, {"r": 3000, "ts": 0.0525, "tc": 0.0475, "fs": 161708.32, "fc": 172075.79, "ss": 3140, "sc": 10266}, {"r": 3200, "ts": 0.0525, "tc": 0.0475, "fs": 173045.27, "fc": 184139.58, "ss": 1924, "sc": 6281}, {"r": 3200.01, "ts": 0.055, "tc": 0.05, "fs": 167883.8, "fc": 178459.86, "ss": 1942, "sc": 6349}, {"r": 3400, "ts": 0.055, "tc": 0.05, "fs": 178882.01, "fc": 190150.92, "ss": 1143, "sc": 3731}, {"r": 3500, "ts": 0.055, "tc": 0.05, "fs": 184381.39, "fc": 195996.74, "ss": 896, "sc": 2923}, {"r": 3500.01, "ts": 0.06, "tc": 0.055, "fs": 173812.14, "fc": 184381.94, "ss": 914, "sc": 2989}, {"r": 3700, "ts": 0.06, "tc": 0.055, "fs": 184179.88, "fc": 195380.15, "ss": 709, "sc": 2314}, {"r": 3900, "ts": 0.06, "tc": 0.055, "fs": 194548.13, "fc": 206378.91, "ss": 696, "sc": 2267}, {"r": 4000, "ts": 0.06, "tc": 0.055, "fs": 199732.25, "fc": 211878.29, "ss": 689, "sc": 2264}, {"r": 4000.01, "ts": 0.07, "tc": 0.065, "fs": 178546.73, "fc": 188660.08, "ss": 0, "sc": 0}, {"r": 4200, "ts": 0.07, "tc": 0.065, "fs": 187814.74, "fc": 198453.05, "ss": 0, "sc": 0}, {"r": 4400, "ts": 0.07, "tc": 0.065, "fs": 197083.21, "fc": 208246.51, "ss": 0, "sc": 0}, {"r": 4600, "ts": 0.07, "tc": 0.065, "fs": 206351.68, "fc": 216000, "ss": 0, "sc": 0}, {"r": 4800, "ts": 0.07, "tc": 0.065, "fs": 215620.15, "fc": 216000, "ss": 0, "sc": 0}, {"r": 5000, "ts": 0.07, "tc": 0.065, "fs": 216000, "fc": 216000, "ss": 0, "sc": 0}, {"r": 5000.01, "ts": 0.0816, "tc": 0.0766, "fs": 194551.14, "fc": 204698.77, "ss": null, "sc": null}, {"r": 5300, "ts": 0.0816, "tc": 0.0766, "fs": 206872.56, "fc": 217662.87, "ss": null, "sc": null}, {"r": 5600, "ts": 0.0816, "tc": 0.0766, "fs": 219194.39, "fc": 230627.39, "ss": null, "sc": null}, {"r": 5900, "ts": 0.0816, "tc": 0.0766, "fs": 231516.22, "fc": 243591.92, "ss": null, "sc": null}, {"r": 6200, "ts": 0.0816, "tc": 0.0766, "fs": 243838.05, "fc": 256556.44, "ss": null, "sc": null}, {"r": 6500, "ts": 0.0816, "tc": 0.0766, "fs": 256159.88, "fc": 269520.97, "ss": null, "sc": null}, {"r": 6800, "ts": 0.0816, "tc": 0.0766, "fs": 268481.71, "fc": 282485.5, "ss": null, "sc": null}, {"r": 7100, "ts": 0.0816, "tc": 0.0766, "fs": 280803.54, "fc": 295450.02, "ss": null, "sc": null}, {"r": 7400, "ts": 0.0816, "tc": 0.0766, "fs": 293125.37, "fc": 308414.55, "ss": null, "sc": null}, {"r": 7700, "ts": 0.0816, "tc": 0.0766, "fs": 305447.2, "fc": 320000, "ss": null, "sc": null}, {"r": 8000, "ts": 0.0816, "tc": 0.0766, "fs": 317769.03, "fc": 320000, "ss": 2400, "sc": 264235.65}, {"r": 8300, "ts": 0.0816, "tc": 0.0766, "fs": 320000, "fc": 320000, "ss": 2490, "sc": 274602.26}, {"r": 8600, "ts": 0.0816, "tc": 0.0766, "fs": 320000, "fc": 320000, "ss": 2580, "sc": 284968.87}, {"r": 8900, "ts": 0.0816, "tc": 0.0766, "fs": 320000, "fc": 320000, "ss": 2670, "sc": 295335.48}, {"r": 9200, "ts": 0.0816, "tc": 0.0766, "fs": 320000, "fc": 320000, "ss": 2760, "sc": 305702.09}, {"r": 9600, "ts": 0.0816, "tc": 0.0766, "fs": 320000, "fc": 320000, "ss": 2880, "sc": 319524.24}, {"r": 9600.01, "ts": 0.1, "tc": 0.1, "fs": null, "fc": 319524.58, "ss": null, "sc": null}, {"r": 10000, "ts": 0.1, "tc": 0.1, "fs": null, "fc": 333346.38, "ss": null, "sc": null}, {"r": 10500, "ts": 0.1, "tc": 0.1, "fs": null, "fc": 350624.06, "ss": null, "sc": null}, {"r": 11000, "ts": 0.1, "tc": 0.1, "fs": null, "fc": 367901.75, "ss": null, "sc": null}, {"r": 11500, "ts": 0.1, "tc": 0.1, "fs": null, "fc": 385179.43, "ss": null, "sc": null}, {"r": 12000, "ts": 0.1, "tc": 0.1, "fs": null, "fc": 402457.11, "ss": null, "sc": null}, {"r": 12500, "ts": 0.1, "tc": 0.1, "fs": null, "fc": 419734.79, "ss": null, "sc": null}, {"r": 13000, "ts": 0.1, "tc": 0.1, "fs": null, "fc": 437012.48, "ss": null, "sc": null}];
+function brl(v){ return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
+function simular(){
+  var renda = parseFloat(document.getElementById('renda').value);
+  var res = document.getElementById('resultado');
+  var av = document.getElementById('aviso');
+  res.style.display='none'; av.style.display='none';
+  if(!renda || renda <= 0){ av.textContent='Digite sua renda familiar mensal.'; av.style.display='block'; return; }
+  if(renda < 2160){ av.textContent='Abaixo de R$ 2.160 a tabela oficial de referência não tem simulação. Chame no WhatsApp que a gente verifica as opções para a sua renda.'; av.style.display='block'; return; }
+  if(renda > 13000){ av.textContent='Acima de R$ 13.000 essa renda sai das faixas do Minha Casa Minha Vida. Chame no WhatsApp para ver outras condições.'; av.style.display='block'; return; }
+  var row = null;
+  for(var i=0;i<TABELA.length;i++){ if(TABELA[i].r <= renda) row = TABELA[i]; else break; }
+  if(!row){ av.textContent='Não encontramos referência para essa renda. Chame no WhatsApp.'; av.style.display='block'; return; }
+  var faixa = renda<=3200 ? 'Faixa 1 (PCVA)' : (renda<=5000 ? 'Faixa 2' : (renda<=9600 ? 'Faixa 3' : 'Faixa 4'));
+  var h = '<b>'+faixa+'</b> · renda de referência '+brl(row.r)+'<br>';
+  h += '<b>Juros:</b> '+(row.tc!=null?(row.tc*100).toFixed(2).replace('.',',')+'% a.a. (cotista FGTS)':'')+(row.ts!=null&&row.ts!=row.tc?' · '+(row.ts*100).toFixed(2).replace('.',',')+'% a.a. (não cotista)':'')+'<br>';
+  h += '<b>Parcela de referência (30% da renda):</b> '+brl(renda*0.3)+'<br>';
+  if(row.fc!=null) h += '<b>Financiamento estimado (cotista FGTS):</b> '+brl(row.fc)+'<br>';
+  if(row.fs!=null) h += '<b>Financiamento estimado (sem FGTS):</b> '+brl(row.fs)+'<br>';
+  if(row.ss!=null) h += '<b>Subsídio:</b> até '+brl(row.ss)+' (sem dependente) ou '+brl(row.sc)+' (com dependente)<br>';
+  h += '<br>Com esse financiamento cabem vários empreendimentos desta página. Chame no WhatsApp e a gente monta a simulação completa na hora.';
+  res.innerHTML = h;
+  res.style.display='block';
+}
+</script>
+</body>
+</html>

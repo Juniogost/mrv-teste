@@ -8,3 +8,6 @@ Materiais técnicos encontrados: VERT implantação e cortes/fachadas (31335405-
 Limites: faltam links tour360/modelos3D para os outros empreendimentos, fotos/panoramas da unidade e orientação para vista real; Porto/Privilege sem sequência completa; Terrazzo sem planta interna independente conferida. Não inventar interiores nem vistas.
 Teste automático:9projetos x3abas sem overflow390px e sem errosJS; anterior/próximo/ampliar/fechar conferidos. Screens locais antes do deploy; validação ao vivo separada.
 Rollback: voltar ao commit272a49a no repositório de teste. Nenhuma publicação no portal sem publica explícito.
+
+Interior Golden final06 - continuação17:41
+Nova golden-interior.html: reconstrução geométrica manual da prancha3, final06. Maquete superior e pontos de visão internos para entrada/sala/cozinha/quartos/banheiro/varanda, giro por arraste. Não é modelo oficial, acabamento profissional final, caminhada contínua com colisão nem representação da unidade202 do showroom. Medidas da planta usadas como base; encontros/aberturas/móveis simplificados. Exterior neutro, sem falsa vista. Pé-direito2,60m ilustrativo declarado. Recorte técnico isolado sem carimbos/assinaturas/dados pessoais. Sete posições testadas localmente sem erro/overflow390px. Pendentes refinamento mobiliário, validação geométrica detalhada e caminhada contínua.

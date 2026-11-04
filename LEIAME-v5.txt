@@ -1,0 +1,10 @@
+MRV showroom v5 - 04/11/2026 - SOMENTE TESTE
+Pedido Junio17:29: retirar sol, plantas, decorados e vista dentro para fora.
+Sol retirado de epic.html e do convite no catálogo. Portal/produção não alterados.
+ambientes.html: showroom9projetos, plantas humanizadas, implantação2D/3D onde verificada, percurso por imagens oficiais, ampliação. Link tour360 VERT extraído do PDF oficial no Drive e destino conferido. Sem dados pessoais, envio, reserva ou crédito.
+Sequência de imagens NÃO é tour360 nem caminhada3D livre. Paisagem da janela/varanda é ilustrativa, não vista garantida da unidade. VERT sala203 e varanda201 identificadas como tipologias diferentes. Safira sala/quarto502, outras referências identificadas.
+Pastas de treino/comissão não copiadas. Imagens independentes das pastas oficiais de divulgação e folders públicos. Fontes por projeto em ambientes/projetos.json.
+Materiais técnicos encontrados: VERT implantação e cortes/fachadas (31335405-ARQ-2D-001/002), Arcos projeto arquitetônico aprovado, Golden projeto arquitetônico. Esses PDFs foram conferidos privadamente, não disponibilizados na página sem triagem completa de carimbos/dados pessoais.
+Limites: faltam links tour360/modelos3D para os outros empreendimentos, fotos/panoramas da unidade e orientação para vista real; Porto/Privilege sem sequência completa; Terrazzo sem planta interna independente conferida. Não inventar interiores nem vistas.
+Teste automático:9projetos x3abas sem overflow390px e sem errosJS; anterior/próximo/ampliar/fechar conferidos. Screens locais antes do deploy; validação ao vivo separada.
+Rollback: voltar ao commit272a49a no repositório de teste. Nenhuma publicação no portal sem publica explícito.

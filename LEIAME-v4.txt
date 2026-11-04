@@ -1,0 +1,5 @@
+MRV v4 TESTE - 04/11/2026
+Maquete Epic navegavel aproximada: 3 torres, implantação relativa e volumes inspirados no folder publico MRV pags22-23. Sem cotas, alturas ou georreferencia tecnicas; nao usar para sombra exata/unidade. Selecao destaca somente o pavimento inferido pela numeracao. Nenhuma cor indica estoque. Proposta herda unidade selecionada.
+Decorados sala/cozinha e varanda + plantas públicas adicionados, sem prometer acabamento/mobiliario contratado.
+Referencias privadas de treinamento nao expostas. Imagens antigas Porto e Privilege provenientes de recortes internos removidas da versao servida. Privilege substituido por arquivos publicitarios TIF independentes do Drive; Porto sem imagens enquanto falta material publico.
+Valores planilha26/10/2026, confirmar estoque e condicoes. Sem coleta/envio de dados, sem reserva, sem producao, sem compra de creditos.

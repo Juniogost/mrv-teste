@@ -1,0 +1,7 @@
+MRV v3 - TESTE - 04/11/2026
+Pré-proposta por unidade: extraída da planilha original 26/10/2026 do Drive, 11 abas. Cada unidade preserva a linha de origem e valores numéricos da fonte, sem recalcular fluxos. Não confirma estoque atual; não recebe dados pessoais nem transmite proposta. Resumo imprimível é pré-proposta de interesse, não documento oficial MRV.
+Piloto Épic: implantação 2D (folder público p22) e perspectiva 3D oficial (p23). A perspectiva é estática, não maquete navegável; explicitado no teste. Nenhuma geometria Tenda foi copiada. Sol é estudo astronômico regional, hora solar e latitude regional de Anápolis, sem previsão de sombra por unidade.
+Lacuna para maquete navegável fiel: plantas cotadas/elevações, alturas e implantação georreferenciada. Mesmas lacunas a verificar nos demais projetos. Aurora sem planta no inventário anterior. Não considerar todo o pedido 3D concluído.
+Fontes: tabela Drive 1DWq58RZW-S-qcce0lQEIKbf3DbAwUf96; folder Épic 1s0CUvzJely-74tFJIoNEX2CkR0CPgsRL.
+Produção intocada, só repo mrv-teste. Rollback: reverter commit v3.
+ATENÇÃO material interno preexistente no v2 (Porto/Privilege) deve ser substituído antes de divulgação pública. Este pacote não adicionou material interno.

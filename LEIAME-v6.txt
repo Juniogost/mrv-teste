@@ -1,0 +1,5 @@
+MRV / EPIC v6 TESTE - 04/11/2026
+Nova experiencia epic/index.html. Condominio3D com torres selecionaveis, topologia do folder p22, comparacao da perspectiva oficial p23. Lazer, guarita, fachada e quartos adicionais do folder publico. Quatro plantas identificadas T1 001/003/206/208. Interior208 reconstruido pela planta humanizada, alturas/aberturas/mobiliario ilustrativos. Nao e decorado oficial nem modelo tecnico validado, nao promete vista real. Movimento por passos nao tem colisao. Estrutura/fachada geometrica ainda em estudo, nao certificada para uso com cliente como projeto exato.
+130unidades da planilha26/10/2026, fluxo por linha sem inventar parcelas intermediarias. Todos os estoques atuais a confirmar, nenhuma cor de venda. Valores arredondados a centavos. Sem enviar dados, reservar ou pagar.
+Faltas: pranchas cotadas e fachadas/cortes Epic, panorama identificado por unidade/andar, espelho de estoque atual e condicoes vigentes validadas. Pesquisa nao encontrou esses itens nas listagens consultadas. Nao significa inexistencia.
+Sem alteracao em producao/portal, sem Lovable/credito pago. Backup privado delta em mrv/v6-20261104.
